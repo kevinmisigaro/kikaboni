@@ -25,7 +25,7 @@
   <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
   <!-- Main Stylesheet File -->
-  <link href="css/kikaboni.css" rel="stylesheet">
+  <link href="css/sheka.css" rel="stylesheet">
 
   <!-- =======================================================
     Theme Name: Rapid
@@ -54,10 +54,18 @@
 
     <div class="container">
 
-      <div class="logo float-left">
+            <div class="logo float-left">
         <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <h1 class="text-light"><a href="#intro" class="scrollto"><span>Rapid</span></a></h1> -->
-        <a href="index.html" class="scrollto"><img id="logo-image" src="img/kikaboni-logo.png" style="max-width: 300px"  class="img-fluid"></a>
+  <!--       <h1 class="text-light"><a href="#intro" class="scrollto">
+          <i class="fa fa-search" style="color: #ffcc00;"></i> 
+          <span>Kikaboni</span></a></h1> -->
+        <a href="#header" class="scrollto"><img id="logo-image" src="img/logo-leaf.png" style="max-width: 300px"  class="img-fluid"></a> 
+        <div class="float-right ml-3 mt-1" id="logo-text">
+          <p style="font-weight: bold;color:#ffcc00;font-size: 12px">
+            <span style="font-size: 28px;">Kikaboni</span><br>
+             <span style="color: green">FARM AGRI</span>BUSINESS
+          </p>    
+        </div> 
       </div>
 
       <nav class="main-nav float-right d-none d-lg-block">
@@ -266,15 +274,17 @@
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
 
-<script>
+      <script>
 // When the user scrolls down 50px from the top of the document, resize the header's font size
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    document.getElementsById("logo").style.maxHeight = "30px";
+    document.getElementById("logo-image").style.maxHeight = "40px";
+    document.getElementById("logo-text").style.display = "none";
   } else {
-    document.getElementById("logo").style.maxHeight = "100px";
+    document.getElementById("logo-image").style.maxHeight = "75px";
+    document.getElementById("logo-text").style.display = "block";
   }
 }
 </script>

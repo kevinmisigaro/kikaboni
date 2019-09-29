@@ -64,25 +64,13 @@
         </div> 
       </div>
 
-      <script>
-// When the user scrolls down 50px from the top of the document, resize the header's font size
-window.onscroll = function() {scrollFunction()};
 
-function scrollFunction() {
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    document.getElementById("logo-image").style.maxHeight = "40px";
-    document.getElementById("logo-text").style.display = "none";
-  } else {
-    document.getElementById("logo-image").style.maxHeight = "75px";
-    document.getElementById("logo-text").style.display = "block";
-  }
-}
-</script>
 
       <nav class="main-nav float-right d-none d-lg-block">
         <ul>
           <li class="active"><a href="#intro">Home</a></li>
           <li><a href="#about">About Us</a></li>
+          <li><a href="#features">Story</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#team">Team</a></li>
@@ -130,7 +118,7 @@ function scrollFunction() {
 
           <div class="col-lg-5 col-md-6">
             <div class="about-img">
-              <img src="img/about-img.jpg" alt="">
+              <img src="img/banana-leaf.jpg" alt="">
             </div>
           </div>
 
@@ -153,6 +141,39 @@ function scrollFunction() {
         </div>
       </div>
 
+    </section><!-- #about -->
+
+        <!--==========================
+      Features Section
+    ============================-->
+    <section id="features">
+      <div class="container">
+
+
+        <div class="row feature-item">
+          <div class="col-lg-6 wow fadeInUp order-1 order-lg-2">
+            <img src="img/green-house.jpg" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-6 wow fadeInUp pt-4 pt-lg-0 order-2 order-lg-1">
+            <h4 style="color: green">OUR STORY</h4>
+            <p>
+             As Tanzania move to use its space on global market by implementing the industrial
+            revolution policy it has opened more opportunities in different sectors the major being
+            Agriculture as a source of raw material producing sector. This speed of development has
+            led to the growth of horticultural sector. Currently the horticultural sector annual growth
+            rate of about 9% to 12% per annum. With such a growth rate horticulture sector is now
+            transforming and engaging more advance technologies ranging from area of production to
+            irrigations systems which insure production efficiency. For this reason KIKABONI
+            FARMS AGRIBUSNESS LIMITED was formed so as to engage more youth in
+            horticulture using advanced farming technologies to ensure sustainable production and
+            supply high quality horticultural products to our markets and processing industries. 
+            </p>
+          </div>
+          
+        </div>
+
+      </div>
     </section><!-- #about -->
 
 
@@ -274,38 +295,7 @@ function scrollFunction() {
       </div>
     </section>
 
-    <!--==========================
-      Features Section
-    ============================-->
-    <section id="features">
-      <div class="container">
 
-
-        <div class="row feature-item mt-1 pt-1">
-          <div class="col-lg-6 wow fadeInUp order-1 order-lg-2">
-            <img src="img/features-2.svg" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-6 wow fadeInUp pt-4 pt-lg-0 order-2 order-lg-1">
-            <h4>OUR STORY</h4>
-            <p>
-             As Tanzania move to use its space on global market by implementing the industrial
-            revolution policy it has opened more opportunities in different sectors the major being
-            Agriculture as a source of raw material producing sector. This speed of development has
-            led to the growth of horticultural sector. Currently the horticultural sector annual growth
-            rate of about 9% to 12% per annum. With such a growth rate horticulture sector is now
-            transforming and engaging more advance technologies ranging from area of production to
-            irrigations systems which insure production efficiency. For this reason KIKABONI
-            FARMS AGRIBUSNESS LIMITED was formed so as to engage more youth in
-            horticulture using advanced farming technologies to ensure sustainable production and
-            supply high quality horticultural products to our markets and processing industries. 
-            </p>
-          </div>
-          
-        </div>
-
-      </div>
-    </section><!-- #about -->
 
     <!--==========================
       Portfolio Section
@@ -334,7 +324,7 @@ function scrollFunction() {
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-card">
             <div class="portfolio-wrap">
-              <img src="img/gallery/kikaboni-gallery-3.jpg" class="img-fluid" alt="">
+              <img src="img/gallery/citrus-branch.jpg" class="img-fluid" alt="">
             </div>
           </div>
 
@@ -439,10 +429,20 @@ function scrollFunction() {
 
                 <div class="col-sm-6">
 
-                  <div class="footer-info">
+                  <!-- <div class="footer-info">
                  
-                    <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet proin fermentum leo. Amet volutpat consequat mauris nunc congue.</p>
-                  </div>
+                    <h4 style="color: yellow;">Kikaboni <br> <span style="color: green">Farm Agri</span>business</h4>
+                  </div> -->
+
+                  <div class="logo float-left">
+        <a href="#header" class="scrollto"><img id="logo-image" src="img/logo-leaf.png" style="max-width: 70px"  class="img-fluid"></a> 
+        <div class="float-right ml-3 mt-1" id="logo-text">
+          <p style="font-weight: bold;color:#ffcc00;font-size: 12px">
+            <span style="font-size: 28px;">Kikaboni</span><br>
+             <span style="color: green">FARM AGRI</span>BUSINESS
+          </p>    
+        </div> 
+      </div>
 
                 </div>
 
@@ -453,18 +453,18 @@ function scrollFunction() {
                     <p>
                      
                      P.O Box 3437<br>
-                      Bunju A –fanaka street <br>
-                       Dar es salaam.<br>
-                      <strong>Phone:</strong>: +255 717 485884<br>
-                      <strong>Email:</strong> info@example.com<br>
+                      Bunju A – Fanaka street <br>
+                       Dar es salaam.<br><br>
+                     +255 717 485884<br>
+                      info@example.com<br>
                     </p>
                   </div>
 
                   <div class="social-links">
-                    <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                    <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-                    <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+               <!--      <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> -->
+                    <a href="https://www.instagram.com/kikaboni_farm/?hl=en" target="_blank" class="instagram"><i class="fa fa-instagram"></i></a>
+             <!--        <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a> -->
                   </div>
 
                 </div>
@@ -531,7 +531,20 @@ function scrollFunction() {
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
 
+        <script>
+// When the user scrolls down 50px from the top of the document, resize the header's font size
+window.onscroll = function() {scrollFunction()};
 
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("logo-image").style.maxHeight = "40px";
+    document.getElementById("logo-text").style.display = "none";
+  } else {
+    document.getElementById("logo-image").style.maxHeight = "75px";
+    document.getElementById("logo-text").style.display = "block";
+  }
+}
+</script>
 
 </body>
 </html>

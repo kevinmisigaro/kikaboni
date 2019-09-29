@@ -24,8 +24,24 @@
   <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
+  <!-- Slick carousel slider -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
   <!-- Main Stylesheet File -->
-  <link href="css/kikaboni.css" rel="stylesheet">
+  <link href="css/sheka.css" rel="stylesheet">
+
+    <style type="text/css">
+    .on-top{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 40px;
+      font-weight: bold;
+      text-align: center;
+    }
+  </style>
 
 </head>
 
@@ -38,9 +54,6 @@
     <div id="topbar">
       <div class="container">
         <div class="social-links">
-<!--           <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-          <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-          <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a> -->
           <a href="https://www.instagram.com/kikaboni_farm/?hl=en" target="_blank" class="instagram">
             <i class="fa fa-instagram"></i>
           </a>
@@ -69,13 +82,13 @@
       <nav class="main-nav float-right d-none d-lg-block">
         <ul>
           <li class="active"><a href="#intro">Home</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#features">Story</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#team">Team</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="#footer">Contact Us</a></li>
+          <li><a href="#about" id="nav-tab">About Us</a></li>
+          <li><a href="#features" id="nav-tab">Story</a></li>
+          <li><a href="#services" id="nav-tab">Services</a></li>
+          <li><a href="#portfolio" id="nav-tab">Portfolio</a></li>
+          <li><a href="#team" id="nav-tab">Team</a></li>
+          <li><a href="gallery.html" id="nav-tab">Gallery</a></li>
+          <li><a href="#footer" id="nav-tab">Contact Us</a></li>
         </ul>
       </nav><!-- .main-nav -->
       
@@ -85,11 +98,11 @@
   <!--==========================
     Intro Section
   ============================-->
-  <section id="intro" class="clearfix pt-5" style="padding-top: 100px !important">
+<!--   <section id="intro" class="clearfix pt-5" style="padding-top: 100px !important">
     <div class="container d-flex h-100">
       <div class="row justify-content-center align-self-center">
         <div class="col-md-6 intro-info order-md-first order-last">
-          <!-- <h2>Rapid Solutions<br>for Your <span>Business!</span></h2> -->
+ 
           <h2>
            Mixing youth and technology to supply <span>horticultural products</span> and allied services
           </h2>
@@ -104,7 +117,30 @@
       </div>
 
     </div>
-  </section><!-- #intro -->
+  </section> -->
+
+<section id="intro" class="clearfix">
+  <div class="your-class">
+  <div>
+    <img src="img/slider/green-house-shade.jpg" style="width: 100%;height: 650px">
+    <div class="on-top">
+       Mixing youth and technology to supply <span style="color: #28b34b">horticultural products</span> and allied services
+    </div>
+  </div>
+  <div>
+    <img src="img/slider/citrus-branch-shade.jpg" style="width: 100%;height: 650px">
+    <div class="on-top">
+        We <span style="color: #28b34b">cultivate and supply</span> horticultural crops
+    </div>
+  </div>
+  <div>
+    <img src="img/slider/kikaboni-gallery-1-shade.jpg" style="width: 100%;height: 650px">
+    <div class="on-top">
+       We are involved in  <span style="color: #28b34b">agriculture related transplants</span> and seed preparations
+    </div> 
+  </div>
+</div>
+</section>
 
   <main id="main">
 
@@ -118,7 +154,7 @@
 
           <div class="col-lg-5 col-md-6">
             <div class="about-img">
-              <img src="img/banana-leaf.jpg" alt="">
+              <img src="img/gallery/kikaboni-gallery-8.jpg" alt="">
             </div>
           </div>
 
@@ -192,7 +228,7 @@
 
           <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s">
             <div class="box">
-              <div class="icon" style="background: #ffcc00;"><i class="fa fa-leaf" style="color: green;"></i></div>
+              <div class="icon" style="background: #FFE16B;"><i class="fa fa-leaf" style="color: green;"></i></div>
               <h4 class="title"><a href="">Cultivate and supply</a></h4> 
               <!-- <p class="description">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -202,7 +238,7 @@
           </div>
           <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s">
             <div class="box">
-              <div class="icon" style="background: #ffcc00;"><i class="fa fa-flask" style="color: green;"></i></div>
+              <div class="icon" style="background: #FFE16B;"><i class="fa fa-flask" style="color: green;"></i></div>
               <h4 class="title"><a href="">Plant transplant services</a></h4>
               <!-- <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                 tempor incididunt ut labore et dolore magna aliqua. </p> -->
@@ -211,7 +247,7 @@
 
           <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
             <div class="box">
-              <div class="icon" style="background: #ffcc00;"><i class="fa fa-cogs" style="color: green;"></i></div>
+              <div class="icon" style="background: #FFE16B;"><i class="fa fa-cogs" style="color: green;"></i></div>
               <h4 class="title"><a href="">Food processing</a></h4>
         <!--       <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                 tempor incididunt ut labore et dolore magna aliqua. </p> -->
@@ -544,9 +580,24 @@ function scrollFunction() {
   } else {
     document.getElementById("logo-image").style.maxHeight = "75px";
     document.getElementById("logo-text").style.display = "block";
+
   }
 }
 </script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+  $('.your-class').slick({
+    autoplay: true,
+    fade: true,
+  cssEase: 'linear',
+  arrows: false,
+  pauseOnFocus: false
+  });
+});
+</script>
+
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
 </body>
 </html>

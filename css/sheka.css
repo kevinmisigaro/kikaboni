@@ -50,8 +50,8 @@ h6 {
 .back-to-top {
   position: fixed;
   display: none;
-  background: #1bb1dc;
-  color: #fff;
+  background: green;
+  color: red;
   width: 44px;
   height: 44px;
   text-align: center;

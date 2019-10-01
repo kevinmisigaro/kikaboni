@@ -28,7 +28,7 @@
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 
   <!-- Main Stylesheet File -->
-  <link href="css/sheka.css" rel="stylesheet">
+  <link href="css/kikaboni.css" rel="stylesheet">
 
     <style type="text/css">
     .on-top{
@@ -68,7 +68,7 @@
   <!--       <h1 class="text-light"><a href="#intro" class="scrollto">
           <i class="fa fa-search" style="color: #ffcc00;"></i> 
           <span>Kikaboni</span></a></h1> -->
-        <a href="#header" class="scrollto"><img id="logo-image" src="img/logo-leaf.png" style="max-width: 300px"  class="img-fluid"></a> 
+        <a href="#intro" class="scrollto"><img id="logo-image" src="img/logo-leaf.png" style="max-width: 300px"  class="img-fluid"></a> 
         <div class="float-right ml-3 mt-1" id="logo-text">
           <p style="font-weight: bold;color:#ffcc00;font-size: 12px">
             <span style="font-size: 28px;">Kikaboni</span><br>
@@ -81,15 +81,15 @@
 
       <nav class="main-nav float-right d-none d-lg-block">
         <ul>
-          <li class="active"><a href="#intro">Home</a></li>
-          <li><a href="#about" id="nav-tab">About Us</a></li>
-          <li><a href="#features" id="nav-tab">Story</a></li>
-          <li><a href="#services" id="nav-tab">Services</a></li>
-          <li><a href="#values" id="nav-tab">Core Values</a></li>
-          <li><a href="#portfolio" id="nav-tab">Portfolio</a></li>
-          <li><a href="#team" id="nav-tab">Team</a></li>
-          <li><a href="gallery.html" id="nav-tab">Products</a></li>
-          <li><a href="#footer" id="nav-tab">Contact Us</a></li>
+         <!--  <li><a href="#intro" id="nav-tab" >Home</a></li> -->
+          <li><a href="#about" id="nav-tab" style="color: white;">About Us</a></li>
+          <li><a href="#features" id="nav-tab1" style="color: white;">Story</a></li>
+          <li><a href="#services" id="nav-tab2" style="color: white;">Services</a></li>
+          <li><a href="#values" id="nav-tab3" style="color: white;">Core Values</a></li>
+          <li><a href="#portfolio" id="nav-tab4" style="color: white;">Products</a></li>
+          <li><a href="#team" id="nav-tab5" style="color: white;">Team</a></li>
+<!--           <li><a href="gallery.html" id="nav-tab6" style="color: white;">Products</a></li> -->
+          <li><a href="#footer" id="nav-tab6" style="color: white;">Contact Us</a></li>
         </ul>
       </nav><!-- .main-nav -->
       
@@ -599,13 +599,29 @@ function scrollFunction() {
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
     document.getElementById("logo-image").style.maxHeight = "40px";
     document.getElementById("logo-text").style.display = "none";
+    document.getElementById("nav-tab").style.color = "#413e66";
+    document.getElementById("nav-tab1").style.color = "#413e66";
+    document.getElementById("nav-tab2").style.color = "#413e66";
+    document.getElementById("nav-tab3").style.color = "#413e66";
+    document.getElementById("nav-tab4").style.color = "#413e66";
+    document.getElementById("nav-tab5").style.color = "#413e66";
+    document.getElementById("nav-tab6").style.color = "#413e66";
+    document.getElementById("nav-tab7").style.color = "#413e66";
   } else {
     document.getElementById("logo-image").style.maxHeight = "75px";
     document.getElementById("logo-text").style.display = "block";
-
+    document.getElementById("nav-tab").style.color = "white";
+    document.getElementById("nav-tab1").style.color = "white";
+    document.getElementById("nav-tab2").style.color = "white";
+    document.getElementById("nav-tab3").style.color = "white";
+    document.getElementById("nav-tab4").style.color = "white";
+    document.getElementById("nav-tab5").style.color = "white";
+    document.getElementById("nav-tab6").style.color = "white";
+    document.getElementById("nav-tab7").style.color = "white";
   }
 }
 </script>
+
 
 <script type="text/javascript">
 $(document).ready(function(){

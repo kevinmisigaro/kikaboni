@@ -45,7 +45,7 @@
 
   <style type="text/css">
     #team .member:hover .member-info-content {
-      height: 150px;
+      height: 175px;
     }
   </style>
 
@@ -382,21 +382,15 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.1s">
-            <div class="portfolio-wrap">
-              <img src="img/gallery/kikaboni-gallery-7.jpg" class="img-fluid" alt="">
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app" data-wow-delay="0.2s">
-            <div class="portfolio-wrap">
-              <img src="img/gallery/kikaboni-gallery-8.jpg" class="img-fluid" alt="">
-            </div>
-          </div>
-
                     <div class="col-lg-4 col-md-6 portfolio-item filter-app" data-wow-delay="0.2s">
             <div class="portfolio-wrap">
               <img src="img/green-house.jpg" class="img-fluid" alt="">
+            </div>
+          </div>
+
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-app" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <img src="img/gallery/kikaboni-gallery-14.jpg" class="img-fluid" alt="">
             </div>
           </div>
 
@@ -425,7 +419,7 @@
 
           <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
             <div class="member">
-              <img src="img/team/noela.jpg" class="img-fluid" alt="">
+              <img src="img/team/noela-3.jpg" class="img-fluid" alt="">
               <div class="member-info">
                 <div class="member-info-content">
                   <h4>Noela Mafuru</h4>
@@ -461,7 +455,7 @@
                   <h4>Prescious Tarimo</h4>
                   <span>Partner</span>
                   <p style="color: #E6E6E6;font-size: 13px; padding: 10px 5px ">
-                   Cerfied economist  worked in both private and government sector,she is passionate in agri-economic activities. She is a strong beliver of youth involvement in modern technology to make the world food safety as the shared responsibility.
+                   Prescious is the cerfied economist  worked in both private and government sector,she is passionate in agri-economic activities. Precita as her collegues call her consider her self as creative in her field of passion.she is a strong beliver of youth involvement in modern technology to make the world food safety as the shared responsibility.
                   </p>
                 </div>
               </div>
@@ -476,6 +470,34 @@
 
       </div>
     </section><!-- #team -->
+
+        <!--==========================
+      Clients Section
+    ============================-->
+    <section id="clients" class="wow fadeInUp">
+      <div class="container">
+
+        <header class="section-header">
+          <h3 style="color: #28b34b !important">Our Partners</h3>
+        </header>
+
+        <div class="text-center">
+          <img src="img/TAHA.png">
+        </div>
+
+     <!--    <div class="owl-carousel clients-carousel">
+          <img src="img/clients/client-1.png" alt="">
+          <img src="img/clients/client-2.png" alt="">
+          <img src="img/clients/client-3.png" alt="">
+          <img src="img/clients/client-4.png" alt="">
+          <img src="img/clients/client-5.png" alt="">
+          <img src="img/clients/client-6.png" alt="">
+          <img src="img/clients/client-7.png" alt="">
+          <img src="img/clients/client-8.png" alt="">
+        </div> -->
+
+      </div>
+    </section><!-- #clients -->
 
   </main>
 
@@ -538,18 +560,33 @@
 
           </div>
 
-          <div class="col-lg-6">
+           <div class="col-lg-6">
 
-            <div>
+            <div class="form">
               
-              <h4>Send us a message</h4>
-              <p>
-                Please talk to us so we can get to know each other and maybe conduct business. We are here for you!
-              </p>
-              <div>
-            <a href="mailto:info@kikaboniagrifarms.co.tz?Subject=Mail from Our Site" class="btn btn-success" 
-            target="_blank">Send Us an Email</a>
-          </div>
+              <h4>Send us an email</h4>
+              <p>Please chat with us so we can get to know each other and maybe conduct business. We are here for you!</p>
+              <form action="contact.php" method="post" class="contactForm">
+                <div class="form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"/>
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" name="email" id="email" 
+                  placeholder="Your Email"/>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"/>
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
+                </div>
+
+                <!-- <div id="sendmessage">Your message has been sent. Thank you!</div>
+                <div id="errormessage"></div> -->
+
+                <div class="text-center">
+                  <input type="submit" class="btn btn-success" value="Send Mail" name="submit"></div>
+              </form>
             </div>
 
           </div>
@@ -638,7 +675,8 @@ $(document).ready(function(){
     fade: true,
     cssEase: 'linear',
     arrows: false,
-    pauseOnHover: false
+    pauseOnHover: false,
+    // lazyLoad: 'ondemand',
   });
 });
 </script>
